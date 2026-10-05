@@ -28,11 +28,11 @@ PARAMETERS = {
     "struct_window_days": 7,
     "struct_min_count": 2,
     # Rapid movement: share of a received payment sent out within the window
-    "rapid_window_hours": 24,
-    "rapid_min_ratio": 0.9,
+    "rapid_window_hours": 12,
+    "rapid_min_ratio": 0.95,
     "rapid_max_ratio": 1.0,
     # Dormant reactivation: inactivity gap and minimum US Dollar amount
-    "dormant_days": 5,
+    "dormant_days": 3,
     "dormant_min_amount": 5000,
 }
 
