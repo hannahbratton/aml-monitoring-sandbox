@@ -1,3 +1,6 @@
+# Data files (download separately; see docs/dataset.md)
+data/
+*.csv
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
