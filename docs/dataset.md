@@ -13,7 +13,7 @@
 - Source: [Kaggle](https://www.kaggle.com/datasets/ealtman2019/ibm-transactions-for-anti-money-laundering-aml)
 - File: HI-Small_Trans.csv
 - License: Community Data License Agreement – Sharing – Version 1.0
-- Size: 475.66 MB
+- Size: 5,078,345 rows, 475.66 MB
 
 ## Data dictionary
 | Field | Type | Description |
