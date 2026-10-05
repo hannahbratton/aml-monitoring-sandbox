@@ -35,8 +35,8 @@ py scripts/run_rules.py   # runs all rules, writes reports/detection_summary.md
 
 | Parameter | Default | Meaning |
 |---|---|---|
-| rapid_window_hours | 24 | Maximum time between receiving and sending |
-| rapid_min_ratio | 0.9 | Minimum share of the received amount sent out |
+| rapid_window_hours | 12 | Maximum time between receiving and sending |
+| rapid_min_ratio | 0.95 | Minimum share of the received amount sent out |
 | rapid_max_ratio | 1.0 | Maximum share of the received amount sent out |
 
 **SQL technique:** correlated subquery acting as an "as-of" join, supported by an index on account and time.
@@ -51,7 +51,7 @@ py scripts/run_rules.py   # runs all rules, writes reports/detection_summary.md
 
 | Parameter | Default | Meaning |
 |---|---|---|
-| dormant_days | 5 | Inactivity gap needed to count as dormant |
+| dormant_days | 3 | Inactivity gap needed to count as dormant |
 | dormant_min_amount | 5,000 | Minimum US Dollar amount to alert |
 
 **SQL technique:** `UNION ALL` to combine both directions, then `LAG` to find the previous activity.
